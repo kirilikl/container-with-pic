@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            min-width: 210px;
+            width: 10vw;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+        }
+
+        .pic{
+            width:100%;
+            aspect-ratio: 1/1;
+            position: relative;
+        }
+
+        .pic img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Поместить картинку полностью */
+            border-radius: 5px;
+            position: absolute;
+        }
+
+        .textContainer{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title{
+            margin: 10px;
+            max-height: 3em;
+            max-width: 100%;
+            overflow: clip;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .desc{
+            margin: 0px;
+            max-height: 5em;
+            max-width: 100%;
+            overflow: auto;
+            font-size: 0.9em;
+            text-align: justify;
+        }
+
+        .price{
+            margin: 0px;
+            font-weight: 800;
+            font-size: 0.75em;
+            color: red
+        }
+
+        .but{
+            background-color:aliceblue;
+            display: inline-block;
+            width: 100%;
+            align-self: center;
+            text-align: center;
+            padding: 5px;
+            margin: 3px;
+            border: 2px solid black;
+            border-radius: 50px;
+            box-shadow: 0px 5px 0px 0px black;
+            cursor: pointer;
+        }
+
+        .but:active{
+            box-shadow: 0px 2px 0px 0px black;
+            position: relative;
+            top: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pic">
+            <img loading="lazy" src="https://magizoo.ru/upload/resize_cache/iblock/9c4/zmgl3yb5mjyrm7l9pekd0fli5c04vxkz/272_372_16a915b8b09d6b9a53198b0553ba36c28/PRO_PLAN_ADULT_DOG_OPTIDIGEST_MEDIUM_SENSITIVE_DIGESTION_78108.webp">
+            <!-- <img> -->
+        </div>
+        <div class="textContainer">
+            <p class="title">PRO PLAN SENSITIVE DIGESTION</p>
+            <p class="price">3500р</p>
+            <p class="desc">для взрослых собак средних пород для чувствительного пищеварения с ягненком и рисом</p>
+            <a class="but">В корзину</a>
+        </div>
+    </div>
+</body>
+</html>
